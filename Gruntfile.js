@@ -79,6 +79,10 @@ module.exports = function(grunt) {
                 files: ['handlebars/*.hbs'],
                 tasks: ['handlebars', 'uglify:templates']
             },
+            jade: {
+                files: ['jade/*.jade', 'api-mock/*.json'],
+                tasks: 'jade'
+            },
             libs: {
                 files: ['libs/*.js'],
                 tasks: ['uglify:libs']
@@ -92,10 +96,11 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-handlebars');
+    grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['coffee', 'handlebars', 'uglify', 'stylus', 'watch']);
-    grunt.registerTask('build-prod', ['coffee', 'handlebars', 'uglify', 'stylus']);
+    grunt.registerTask('default', ['coffee', 'handlebars', 'uglify', 'stylus', 'jade', 'watch']);
+    grunt.registerTask('build-prod', ['coffee', 'handlebars', 'uglify', 'jade', 'stylus']);
 };
