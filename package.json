@@ -8,6 +8,7 @@
     "grunt-contrib-uglify": "~0.3.1",
     "grunt-contrib-stylus": "~0.12.0",
     "grunt-contrib-handlebars": "~0.6.0",
+    "grunt-contrib-jade": "~0.9.1",
     "nib": "~1.0.2"
   }
 }

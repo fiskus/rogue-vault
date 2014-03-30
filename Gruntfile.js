@@ -28,6 +28,18 @@ module.exports = function(grunt) {
                 }
             }
         },
+        jade: {
+            base: {
+                options: {
+                    data: function() {
+                        return require('./api-mock/test.json')
+                    }
+                },
+                files: {
+                    'index.html': 'jade/base.jade'
+                }
+            }
+        },
         stylus: {
             compile: {
                 files: {
