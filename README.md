@@ -7,11 +7,12 @@ P.S. Я джва года хочу такую игру.
 ## Установка
 
 `$ npm install`
+
 `$ grunt`
 
-### nginx conf
+### Конфигурация nginx
 
-Add to `/etc/nginx/nginx.conf`:
+Добавить в файл `/etc/nginx/nginx.conf` в поле `http`:
 
     server {
         listen       1337;
