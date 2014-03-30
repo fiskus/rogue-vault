@@ -38,6 +38,16 @@ module.exports = function(grunt) {
                 files: {
                     'index.html': 'jade/base.jade'
                 }
+            },
+            person: {
+                options: {
+                    data: function() {
+                        return require('./api-mock/test.json')
+                    }
+                },
+                files: {
+                    'person.html': 'jade/person.jade'
+                }
             }
         },
         stylus: {
