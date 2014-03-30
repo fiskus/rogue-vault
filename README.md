@@ -8,3 +8,17 @@ P.S. Я джва года хочу такую игру.
 
 `$ npm install`
 `$ grunt`
+
+=== nginx conf
+
+Add to `/etc/nginx/nginx.conf`:
+
+    server {
+        listen       1337;
+        server_name  localhost;
+
+        location / {
+            root   /home/erokhin/documents/rogue-vault;
+            index  index.html;
+        }
+    }
