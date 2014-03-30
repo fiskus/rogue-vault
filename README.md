@@ -4,12 +4,12 @@
 
 P.S. Я джва года хочу такую игру.
 
-== Установка
+## Установка
 
 `$ npm install`
 `$ grunt`
 
-=== nginx conf
+### nginx conf
 
 Add to `/etc/nginx/nginx.conf`:
 
