@@ -1,0 +1,57 @@
+.personslist
+    position: absolute
+    left: 10px
+    top: 110px
+    width: 200px
+
+.person
+    border: 4px solid #dcdcdc
+    margin: 0 0 2px
+    padding: 10px
+    overflow: hidden
+    cursor: pointer
+
+    &:hover
+        border-color: #ccc
+
+.person-face
+    width: 36px
+    float: left
+    height: 36px
+    border: 4px solid
+
+    &:after
+        display: block
+        width: 36px
+        line-height: 36px
+        text-align: center
+
+.person-face-male
+    border-color: #090
+
+    &:after
+        content: 'M'
+
+.person-face-female
+    border-color: #900
+
+    &:after
+        content: 'F'
+
+.person-details
+    padding: 0 0 0 50px
+
+.person-name
+    font: 300 12px/12px 'Droid Sans Mono', monospace
+    margin: 0 0 4px
+
+.person-health-wrapper
+    width: 100px
+    background: #dcdcdc
+    border-radius: 2px
+    padding: 2px
+
+.person-health
+    height: 4px
+    background: #090
+    transition: ease width 0.3s

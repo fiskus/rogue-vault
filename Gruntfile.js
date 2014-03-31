@@ -64,6 +64,8 @@ module.exports = function(grunt) {
                         'lib/gator.js',
                         'lib/handlebars.js',
                         'lib/lodash.js',
+                        'lib/Signal.js',
+                        'lib/SignalBinding.js',
                         'lib/qwest.js',
                         'lib/xxspubsub.js',
                     ]

@@ -1,1 +1,10 @@
-<div class="person"></div>
+<div class="person person-{{ name }}">
+    <div class="person-face person-face-{{ sex }}"></div>
+    <div class="person-details">
+        <div class="person-name">{{ name }}</div>
+        <div class="person-health-wrapper">
+            <div class="person-health" style="width: {{ health }}px;">
+            </div>
+        </div>
+    </div>
+</div>

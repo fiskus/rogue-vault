@@ -1,0 +1,2 @@
+class PersonsList
+    constructor: () ->
